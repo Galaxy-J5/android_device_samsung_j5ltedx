@@ -24,7 +24,7 @@ TARGET_SCREEN_WIDTH := 720
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltedx/overlay
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath2=/system/lib/libsec-ril-dsda.so \
+    rild.libpath2=/system/lib/libsec-ril-dsds.so \
     ro.telephony.default_network=9
 
 # Inherit from j5-common

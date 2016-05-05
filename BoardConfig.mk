@@ -27,10 +27,10 @@
 -include vendor/samsung/j5ltedx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := j5lte,j5nltedx
+TARGET_OTA_ASSERT_DEVICE := j5lte,j5ltedx
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_j5nlte_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_j5ltedx_defconfig
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true

@@ -30,6 +30,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     com.android.nfc_extras
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.lte_vrte_ltd=1 \
+    telephony.lteOnCdmaDevice=0 \
     rild.libpath2=/system/lib/libsec-ril-dsds.so \
     ro.telephony.default_network=9
 

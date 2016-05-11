@@ -23,17 +23,8 @@ TARGET_SCREEN_WIDTH := 720
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltedx/overlay
 
-LOCAL_OVERRIDES_PACKAGES := \
-    libnfc_nci \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
-
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.lte_vrte_ltd=1 \
-    telephony.lteOnCdmaDevice=0 \
-    rild.libpath2=/system/lib/libsec-ril-dsds.so \
-    ro.telephony.default_network=9
+    rild.libpath2=/system/lib/libsec-ril-dsds.so
 
 # Inherit from j5-common
 $(call inherit-product, device/samsung/j5-common/common.mk)

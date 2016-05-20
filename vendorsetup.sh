@@ -1,1 +1,2 @@
 add_lunch_combo cm_j5ltedx-userdebug
+add_lunch_combo cm_j5ltedx-eng

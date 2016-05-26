@@ -36,10 +36,10 @@
 
 #include "init_msm.h"
 
-void init_dsda() {
-     property_set("ro.multisim.set_audio_params", "true");
-     property_set("ro.multisim.simslotcount", "2");
-     property_set("persist.radio.multisim.config", "dsda");
+void init_dsds() {
+    property_set("ro.multisim.set_audio_params", "true");
+    property_set("ro.multisim.simslotcount", "2");
+    property_set("persist.radio.multisim.config", "dsda");
 }
 
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
@@ -61,13 +61,13 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     property_get("ro.bootloader", bootloader);
 
     if (strstr(bootloader, "J500G")) {
-       /* SM-J500G */
-       property_set("ro.build.fingerprint", "samsung/j5ltedx/j5lte:5.1.1/LMY48B/J500GXXU1AOL1:user/release-keys");
-       property_set("ro.build.description", "j5ltedx-user 5.1.1 LMY48B J500GXXU1AOL1 release-keys");
-       property_set("ro.product.model", "SM-J500G");
-       property_set("ro.product.device", "j5lte");
+        /* SM-J500G */
+        property_set("ro.build.fingerprint", "samsung/j5ltedx/j5lte:5.1.1/LMY48B/J500GXXU1AOL1:user/release-keys");
+        property_set("ro.build.description", "j5ltedx-user 5.1.1 LMY48B J500GXXU1AOL1 release-keys");
+        property_set("ro.product.model", "SM-J500G");
+        property_set("ro.product.device", "j5lte");
 
-       init_dsda();
+        init_dsds();
     }
 
     property_get("ro.product.device", device);

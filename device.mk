@@ -23,9 +23,8 @@ TARGET_SCREEN_WIDTH := 720
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltedx/overlay
 
-PRODUCT_PROPERTY_OVERRIDES += \
+ADDITIONAL_DEFAULT_PROPERTIES += \
     rild.libpath2=/system/lib/libsec-ril-dsds.so
 
 # Inherit from j5-common
 $(call inherit-product, device/samsung/j5-common/common.mk)
-

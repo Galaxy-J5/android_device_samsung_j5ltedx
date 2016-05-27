@@ -24,6 +24,8 @@ TARGET_SCREEN_WIDTH := 720
 DEVICE_PACKAGE_OVERLAYS += device/samsung/j5ltedx/overlay
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.multisim.simslotcount=2 \
+    persist.radio.multisim.config=dsda \
     rild.libpath2=/system/lib/libsec-ril-dsds.so
 
 # Inherit from j5-common

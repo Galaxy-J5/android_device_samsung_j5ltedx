@@ -26,11 +26,6 @@
 # Inherit from the proprietary version
 -include vendor/samsung/j5ltedx/BoardConfigVendor.mk
 
-# Properties for DUAL-SIM
-#SIM_COUNT := 2
-#TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
-#TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
-
 # Partition sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
@@ -49,10 +44,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_OTA_ASSERT_DEVICE := j5lte
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_j5nlte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/j5lte
+TARGET_KERNEL_CONFIG := cyanogenmod_j5lte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/j5lte_cm13
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/j5ltedx/init/init_j5lte.c
+TARGET_INIT_VENDOR_LIB := libinit_j5lte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j5ltedx
